@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Joao Silveira</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Encabezado con tu nombre y menú de navegación -->
+  <header>
+    <h1>Joao Victor Mariano Silveira</h1>
+     <!-- Botón hamburguesa -->
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Menú de navegación -->
+  <nav id="nav">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  </header>
+
+  <!-- Sección sobre ti -->
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Hola, soy estudiante de DAM en ILERNA y me apasiona todo lo relacionado con el desarrollo de aplicaciones
+	y la programación. Tengo experiencia con HTML5, CSS, JavaScript, C#, Python, Java y otras tecnologías que 
+	usamos en el ciclo. Me considero una persona responsable, proactiva, rápida aprendiendo cosas nuevas y muy 
+	atenta al detalle, siempre con ganas de asumir retos y seguir mejorando en cada proyecto.</p>
+  </section>
+
+  <!-- Sección de proyectos -->
+ <div class="proyectos-container">
+    <div class="proyecto-card">
+      <img src="img/proyecto1.jpg" alt="Proyecto 1">
+      <h3>Proyecto 1</h3>
+      <p>Descripción breve de este proyecto.</p>
+    </div>
+    <div class="proyecto-card">
+      <img src="img/proyecto2.jpg" alt="Proyecto 2">
+      <h3>Proyecto 2</h3>
+      <p>Descripción breve de este proyecto.</p>
+    </div>
+    <div class="proyecto-card">
+      <img src="img/proyecto3.jpg" alt="Proyecto 3">
+      <h3>Proyecto 3</h3>
+      <p>Descripción breve de este proyecto.</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Sección de contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+   <!-- Información de contacto -->
+  <div class="contact-info">
+    <p><i class="fas fa-envelope"></i> <a href="mailto:joaaomarinoo.500@gmail.com">joaaomarinoo.500@gmail.com</a></p>
+    <p><i class="fas fa-phone"></i> 634075046</p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/joaovictormarianosilveira" target="_blank">LinkedIn</a></p>
+    <p><i class="fab fa-github"></i> <a href="https://github.com/tu-usuario" target="_blank">GitHub</a></p>
+  </div>
+
+  <!-- Formulario -->
+  <h3>Envíame un mensaje:</h3>
+  <form id="contactForm" action="mailto:joaaomarinoo.500@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="nombre" placeholder="Nombre" required>
+    <input type="email" name="email" placeholder="Correo electrónico" required>
+    <textarea name="mensaje" rows="5" placeholder="Tu mensaje..." required></textarea>
+    <button type="submit">Enviar</button>
+    <p id="successMessage" class="success-message">¡Mensaje enviado correctamente!</p>
+  </form>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© 2025 - Mi Portfolio</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
