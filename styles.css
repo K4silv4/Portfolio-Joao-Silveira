@@ -24,6 +24,11 @@ header {
   align-items: center; /* centra verticalmente */
 }
 
+.logo {
+	 width: 120px;   /* ajusta el tama?o del logo */
+  height: auto;
+}
+
 header h1 {
   margin-bottom: 10px;
   font-family: 'Luxurious Script', cursive;
@@ -331,4 +336,14 @@ form button:hover {
     0 0 20px #39ff14,
     0 0 40px #39ff14;
   animation: flicker 1.5s infinite alternate;
+}
+
+#gameContainer {
+  display: none; /* oculto hasta pulsar el logo */
+}
+
+#gameCanvas {
+  background: black;
+  display: block;
+  margin: 0 auto;
 }

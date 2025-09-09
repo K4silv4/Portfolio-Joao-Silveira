@@ -11,7 +11,9 @@
 <body>
   <!-- Encabezado con tu nombre y menú de navegación -->
   <header>
-    <h1>Joao Victor Mariano Silveira</h1>
+     <div class="logo-container">
+     <img src="logo.png" alt="Logo K4" class="logo" id="logoBtn">
+  </div>
      <!-- Botón hamburguesa -->
   <div class="menu-toggle" id="menu-toggle">
     <span></span>
@@ -26,6 +28,10 @@
     <a href="#contacto">Contacto</a>
   </nav>
   </header>
+
+<div id="gameContainer" style="display:none; text-align:center; margin-top:20px;">
+  <canvas id="gameCanvas" width="500" height="400" style="border:2px solid green;"></canvas>
+</div> 
 
 <!-- Hero Section -->
 <section class="hero">
@@ -102,5 +108,6 @@
     <p>© 2025 - Mi Portfolio</p>
   </footer>
   <script src="script.js"></script>
+
 </body>
 </html>
